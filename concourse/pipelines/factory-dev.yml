@@ -1,0 +1,14 @@
+resources:
+- name: gitcontents
+  type: git
+  source:
+    uri: https://github.com/<your-username>/eks-platform.git
+    branch: main
+
+jobs:
+- name: create-eks
+  plan:
+  - get: gitcontents
+    trigger: true
+  - task: apply-eks
+    file: gitcontents/concourse/tasks/run-terragrunt.yml
