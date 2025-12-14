@@ -2,7 +2,7 @@ resources:
 - name: gitcontents
   type: git
   source:
-    uri: https://github.com/<your-username>/eks-platform.git
+    uri: https://github.com/Akashroy2323/eks-platform.git
     branch: main
 
 jobs:
