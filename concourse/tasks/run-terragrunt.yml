@@ -1,0 +1,18 @@
+platform: linux
+
+image_resource:
+  type: registry-image
+  source:
+    repository: alpine
+
+inputs:
+- name: gitcontents
+
+run:
+  path: sh
+  args:
+    - -exc
+    - |
+      apk add --no-cache terraform terragrunt aws-cli
+      cd gitcontents/resources/terragrunt/dev/eks-cluster
+      terragrunt apply -auto-approve
