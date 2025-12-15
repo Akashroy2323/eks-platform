@@ -6,9 +6,9 @@ inputs = {
   cluster_name = "personal-eks-dev"
   region       = "ap-south-1"
 
-  vpc_id = "vpc-0aa253447d3c01fdb"
+  vpc_id = "vpc-0fa55a87cde745c59"
   subnet_ids = [
-    "subnet-00575882532156387",
-    "subnet-04ffb95d4ef4ecca7"
+    "subnet-05239b6603017d9e6",
+    "subnet-0696c28b6162772cc"
   ]
 }
